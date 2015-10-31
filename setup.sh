@@ -35,5 +35,9 @@ sudo -u postgres psql -c "ALTER USER $DBUSER WITH PASSWORD '$DBPSWD';"
 
 python manage.py migrate
 echo "Game.objects.create()" | python manage.py shell_plus
+mkdir /vagrant/blackbox3/uploaded_files
+mkdir /vagrant/blackbox3/uploaded_images
+mkdir /vagrant/blackbox3/uploaded_tasks
+
 
 chown -R vagrant:vagrant /vagrant
